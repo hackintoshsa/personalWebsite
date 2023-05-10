@@ -3,7 +3,7 @@ name: Angular App CI/CD
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
           npm install -g @angular/cli
           npm install
       - name: Build the App
-        run: ng build --prod
+        run: ng build --configuration production --aot
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@master
         with:
