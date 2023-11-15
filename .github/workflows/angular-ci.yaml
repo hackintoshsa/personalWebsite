@@ -21,7 +21,7 @@ jobs:
       - name: Build the App
         run: ng build --configuration production --aot
       - name: Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@master
+        uses: w9jds/firebase-action@v12.9.0
         with:
           args: deploy --only hosting
         env:
