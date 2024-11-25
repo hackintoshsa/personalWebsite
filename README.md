@@ -24,16 +24,27 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI, use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-## STEPS TO DEPLOY TO FIREBASE
+## Steps to Deploy to Firebase
 
-Run `npm install -g firebase-tools` this installs firebase globally
+1. **Install Firebase CLI**  
+   Install Firebase CLI globally:
+   ```bash
+   npm install -g firebase-tools
 
-Run `firebase login` to login to firebase
+2. **Install Firebase Login**  
+   Install Firebase Login :
+   ```bash
+   firebase login:ci
 
-Run `firebase init` to initialize the project (add) firebase config like firebase.json & .firebaserc
+3. **Initialize Firebase**  
+   Initialize Firebase On The Project :
+   ```bash
+   firebase init
 
-Run `ng build --prod --aot`
 
-Run `firebase deploy`
+
+
+
+

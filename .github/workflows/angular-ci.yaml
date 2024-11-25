@@ -20,9 +20,10 @@ jobs:
           npm install
       - name: Build the App
         run: ng build --configuration production --aot
+
       - name: Deploy to Firebase Hosting
         uses: w9jds/firebase-action@v12.8.0
         with:
           args: deploy --only hosting
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_TOKEN: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
